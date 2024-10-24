@@ -28,13 +28,27 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: auto;
 
     display: grid;
     grid-column: 1fr;
     grid-template-rows: 1fr 1fr ;
     gap: 0;
     
+}
+
+/* SCROLL */
+
+#wrap{
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+    scrollbar-color: rgb(60, 199, 227) transparent;
+    scrollbar-width: none;
+    transition: ease-in-out 5s;
+}
+
+#wrap:hover{
+    scrollbar-width: thin;
 }
 
 /* pagina 1 */
@@ -136,6 +150,118 @@
     height: 35px;
     border-radius: 10px;
     color: #555;
+}
+
+/* pag3 */
+
+#pag3{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    max-height: 100vh;
+}
+
+#pag3 #img img{
+    width: 1200px;
+    height: 560px;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, black 90%, transparent);
+    mask-image: linear-gradient(to bottom, black 90%, transparent);
+    filter: brightness(0.5)
+}
+
+/* pagina 4 */
+
+#pag4{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#pag4 #text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pag4 #text p{
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 10px
+}
+
+#pag4 #img {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pag4 #img .img{
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222b8;
+    border-radius: 25px;
+    transition: 900ms all;
+}
+
+
+#pag4 #img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    filter: brightness(0.8);
+   
+}
+
+#pag4 #img:hover .img{
+    filter: brightness(0.5)
+}
+
+#pag4 #img .img:hover{
+    filter: brightness(0.9)
+}
+
+
+#info{
+    width: 100%;
+    height: 50px;
+    font-family: sans-serif;
+    padding-top: 5px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
     
 }
 
+#info p:nth-child(2){
+    color: #cccccc6b;
+}
+
+#pag4 input[type = "button"]{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    color: #555;
+}
