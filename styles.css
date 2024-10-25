@@ -51,6 +51,21 @@
     scrollbar-width: thin;
 }
 
+/* SCROLL */
+
+#wrap{
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+    scrollbar-color: rgb(60, 199, 227) transparent;
+    scrollbar-width: none;
+    transition: ease-in-out 5s;
+}
+
+#wrap:hover{
+    scrollbar-width: thin;
+}
+
 /* pagina 1 */
 
 #pag1{
