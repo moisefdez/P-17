@@ -51,6 +51,21 @@
     scrollbar-width: thin;
 }
 
+/* SCROLL */
+
+#wrap{
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+    scrollbar-color: rgb(60, 199, 227) transparent;
+    scrollbar-width: none;
+    transition: ease-in-out 5s;
+}
+
+#wrap:hover{
+    scrollbar-width: thin;
+}
+
 /* pagina 1 */
 
 #pag1{
@@ -165,9 +180,9 @@
     width: 1200px;
     height: 560px;
     object-fit: cover;
-    mask-image: linear-gradient(to top, black 90%, transparent);
+    
     mask-image: linear-gradient(to bottom, black 90%, transparent);
-    filter: brightness(0.5)
+    filter: brightness(0.5);
 }
 
 /* pagina 4 */
@@ -218,6 +233,7 @@
     align-items: center;
     background-color: #222222b8;
     border-radius: 25px;
+    filter: brightness(0.5);
     transition: 900ms all;
 }
 
@@ -232,12 +248,9 @@
    
 }
 
-#pag4 #img:hover .img{
-    filter: brightness(0.5)
-}
-
 #pag4 #img .img:hover{
-    filter: brightness(0.9)
+    filter: brightness(0.9);
+    cursor:pointer ;
 }
 
 
