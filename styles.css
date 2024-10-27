@@ -278,3 +278,45 @@
     border-radius: 10px;
     color: #555;
 }
+
+/* pagina-5 */
+
+#pag5{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 550px;
+    max-height: 100vh;
+    margin-top: 10px;
+
+    position: relative;
+}
+
+#pag5 #img img{
+    width: 1200px;
+    height: 560px;
+    object-fit: cover;
+    
+    mask-image: linear-gradient(to bottom, black 90%, transparent);
+    filter: brightness(0.5);
+}
+
+#pag5 #info-bottom{
+    width: 1200px;
+    height: 550px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: end;
+    color: #ccc;
+    font-size: 40px;
+}
+
+#pag5 #info-bottom #icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
