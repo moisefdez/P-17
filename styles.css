@@ -1,5 +1,3 @@
-
-
 /* GENERALES */
 * {
     margin: 0;
@@ -31,56 +29,59 @@
 
     display: grid;
     grid-column: 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     gap: 0;
-    
+
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 /* SCROLL */
 
-#wrap{
+#wrap {
     overflow-x: hidden;
     overflow-y: auto;
-   
+
     scrollbar-color: rgb(60, 199, 227) transparent;
     scrollbar-width: none;
     transition: ease-in-out 5s;
 }
 
-#wrap:hover{
+#wrap:hover {
     scrollbar-width: thin;
 }
 
 /* SCROLL */
 
-#wrap{
+#wrap {
     overflow-x: hidden;
     overflow-y: auto;
-   
+
     scrollbar-color: rgb(60, 199, 227) transparent;
     scrollbar-width: none;
     transition: ease-in-out 5s;
 }
 
-#wrap:hover{
+#wrap:hover {
     scrollbar-width: thin;
 }
 
 /* pagina 1 */
 
-#pag1{
+#pag1 {
     width: 100%;
     max-width: 1200px;
     min-height: 600px;
     max-height: 100vh;
-    
+
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
 }
 
-#pag1 #img img{
+#pag1 #img img {
     width: 1200px;
     height: 560px;
     object-fit: cover;
@@ -88,7 +89,7 @@
     filter: brightness(0.7)
 }
 
-#pag1 #content{
+#pag1 #content {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -100,21 +101,22 @@
 }
 
 
-#pag1 #content h1{
+#pag1 #content h1 {
     font-size: 50px;
     font-family: sans-serif;
     margin-top: 150px;
     font-weight: 900;
-   text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
 }
 
-#pag1 #content p{
+#pag1 #content p {
     width: 70%;
     font-size: 20px;
     margin-top: 10px;
 }
 
-#pag1 #content input[type = "button"]{
+#pag1 #content input[type="button"] {
     display: block;
     width: 150px;
     height: 50px;
@@ -127,7 +129,7 @@
 
 /* pagina 2 */
 
-#pag2{
+#pag2 {
     width: 100%;
     max-width: 1200px;
     min-height: 500px;
@@ -138,7 +140,7 @@
     overflow: hidden;
 }
 
-#pag2 #content{
+#pag2 #content {
     color: white;
     padding-left: 20px;
 
@@ -150,18 +152,24 @@
     gap: 20px;
 }
 
-#pag2 #content h1,p{
+#pag2 #content h1,
+p {
     text-align: end;
 }
 
-#pag2 #img img{
-    width: 580px;
+#pag2 #img {
+    display: flex;
+    justify-content: center;
+}
+
+#pag2 #img img {
+    width: 90%;
     padding: 20px;
     border-radius: 50px;
     filter: brightness(0.9)
 }
 
-#pag2 input[type = "button"]{
+#pag2 input[type="button"] {
     width: 200px;
     height: 35px;
     border-radius: 10px;
@@ -171,25 +179,25 @@
 
 /* pag3 */
 
-#pag3{
+#pag3 {
     width: 100%;
     max-width: 1200px;
     min-height: 600px;
     max-height: 100vh;
 }
 
-#pag3 #img img{
+#pag3 #img img {
     width: 1200px;
     height: 560px;
     object-fit: cover;
-    
+
     mask-image: linear-gradient(to bottom, black 90%, transparent);
     filter: brightness(0.5);
 }
 
 /* pagina 4 */
 
-#pag4{
+#pag4 {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -198,14 +206,14 @@
     align-items: center;
 }
 
-#pag4 #text{
+#pag4 #text {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#pag4 #text p{
+#pag4 #text p {
     width: 100%;
     max-width: 1000px;
     padding-left: 10px;
@@ -224,7 +232,7 @@
     gap: 20px;
 }
 
-#pag4 #img .img{
+#pag4 #img .img {
     width: 100%;
     max-width: 300px;
     height: 450px;
@@ -240,41 +248,41 @@
 }
 
 
-#pag4 #img img{
+#pag4 #img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     filter: brightness(0.8);
-   
+
 }
 
-#pag4 #img .img:hover{
+#pag4 #img .img:hover {
     filter: brightness(0.9);
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 
-#info{
+#info {
     width: 100%;
     height: 50px;
     font-family: sans-serif;
     padding-top: 5px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2px;
-    
+
 }
 
-#info p:nth-child(2){
+#info p:nth-child(2) {
     color: #cccccc6b;
 }
 
-#pag4 input[type = "button"]{
+#pag4 input[type="button"] {
     width: 130px;
     height: 35px;
     border-radius: 10px;
@@ -284,7 +292,7 @@
 
 /* pagina-5 */
 
-#pag5{
+#pag5 {
     width: 100%;
     max-width: 1200px;
     min-height: 550px;
@@ -294,17 +302,17 @@
     position: relative;
 }
 
-#pag5 #img img{
+#pag5 #img img {
     width: 1200px;
     height: 560px;
     object-fit: cover;
-    
+
     mask-image: linear-gradient(to bottom, black 90%, transparent);
     filter: brightness(0.5);
 }
 
-#pag5 #info-bottom{
-    width: 1200px;
+#pag5 #info-bottom {
+    width: 100%;
     height: 550px;
     background-color: transparent;
     position: absolute;
@@ -318,7 +326,7 @@
     font-size: 40px;
 }
 
-#pag5 #info-bottom #icons{
+#pag5 #info-bottom #icons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -332,4 +340,119 @@ footer {
     font-size: 10px;
     display: flex;
     justify-content: center;
+}
+
+/* Responsibe Pag 1 */
+
+
+@media (max-width: 1067px) {
+    #pag1 #content h1 {
+        font-size: 46px;
+    }
+
+}
+@media (max-width: 991px) {
+    #pag1 #content h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+@media (max-width: 891px) {
+    #pag1 #content h1 {
+        font-size: 37px;
+    }
+}
+
+
+
+@media (max-width: 797px) {
+    #pag1 #content h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 689px) {
+    #pag1 #content h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 679px) {
+    #pag1 #content h1 {
+        font-size: 27px;
+    }
+    #pag1 #content p {
+        width: 88%;
+        font-size: 20px;
+        margin-top: 15px;
+        text-align: justify;
+    }
+}
+
+@media (max-width:577px) {
+    #pag1 #content h1 {
+        margin-top: 89px;
+    }
+
+    #pag1 #content h1 {
+        font-size: 39px;
+    }
+    #pag1 #content p {
+        width: 75%;
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    #pag1 #content h1 {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 505px) {
+    #pag1 #content h1 {
+        font-size: 34px;
+    }
+
+    #pag1 #content p {
+        width: 85%;
+        text-align: justify;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    #pag1 #content input[type="button"] {
+        margin-top: 27px;
+    }
+
+
+}
+
+@media (max-width:439px) {
+    @media (max-width: 505px) {
+        #pag1 #content h1 {
+            font-size: 29px;
+        }
+    }
+
+}
+
+@media (max-width: 379px) {
+    @media (max-width: 505px) {
+        #pag1 #content h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 319px) {
+    @media (max-width: 505px) {
+        #pag1 #content h1 {
+            font-size: 34px;
+        }
+    }
 }
